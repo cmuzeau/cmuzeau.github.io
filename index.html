@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Diffusion Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Diffusion Models in Image Generation</h1>
+        <p>Diffusion models are a powerful class of generative models that have revolutionized the field of AI-driven image generation. These models gradually refine an image from random noise through a series of denoising steps.</p>
+	<a href="https://github.com/cmuzeau">Check my GitHub</a>
+
+        <h2>The Diffusion Process</h2>
+        <p>The core idea behind diffusion models is to start with a pure noise image and iteratively apply a reverse diffusion process to reconstruct meaningful images. This is done using deep neural networks trained to predict and remove noise step by step.</p>
+
+        <div class="image-container">
+            <img src="https://images.prismic.io/encord/d765518e-7251-4d03-bf39-dcae6ed27056_image4.png?auto=compress,format" alt="Diffusion Process Visualization">
+        </div>
+
+        <h2>How It Works</h2>
+        <p>The process consists of two key phases:</p>
+        <ul>
+            <li><strong>Forward Process:</strong> An image is progressively corrupted by adding Gaussian noise.</li>
+            <li><strong>Reverse Process:</strong> A neural network learns to recover the original image by predicting and removing noise at each step.</li>
+        </ul>
+
+        <h2>Applications</h2>
+        <p>Diffusion models have found applications in various fields, including:</p>
+        <ul>
+            <li>Artistic image generation</li>
+            <li>Photo restoration</li>
+            <li>Super-resolution imaging</li>
+            <li>Scientific simulations</li>
+        </ul>
+
+	<img src="https://cs231n.github.io/assets/knn.jpeg" width="700px">
+
+        <h2>Conclusion</h2>
+        <p>Diffusion models represent a major breakthrough in AI-generated media. Their ability to create high-quality images from noise makes them invaluable for various creative and scientific applications.</p>
+    </div>
+</body>
+</html>
